@@ -1,4 +1,9 @@
 node {
+    
+    stage('checkout branch '+ "${BRANCH_NAME}" ){
+        println ("Branch Name =" + "${BRANCH_NAME}")
+    }
+    
     stage('First stage'){
         echo 'first stage'
     }
