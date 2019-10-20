@@ -15,7 +15,7 @@ node {
         stage ('upload to dev') {
             echo 'uploading to dev'
         }
-    else if ("${BRANCH_NAME}" == 'master') {
+    }else if ("${BRANCH_NAME}" == 'master') {
         stage ('deploy to qa') {
             echo 'deploy to dev'
         }    
